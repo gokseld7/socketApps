@@ -1,2 +1,2 @@
 # socketapps
-Socket Applications for Different Languages
+Socket Applications for Python and PHP
