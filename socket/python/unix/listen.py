@@ -5,6 +5,11 @@ import socket
 import os
 
 socket_file = "unix_socket"
+
+if socket_file not in os.listdir():
+	with open(socket_file, 'w'):
+		pass
+
 os.unlink(socket_file)
 
 listener_socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
